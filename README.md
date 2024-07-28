@@ -16,7 +16,6 @@ This repository contains a custom implementation of an array-like data structure
 You can instantiate the custom array and use it just like a standard array:
 
 ```javascript
-const myArray = new CustomArray(1, 2, 3);
+const myArray = new MyArray();
 myArray.push(4);
-console.log(myArray.get(2)); // Outputs: 3
-console.log(myArray.length); // Outputs: 4
+console.log(myArray.get(0)); // Outputs: 4
