@@ -19,3 +19,11 @@ You can instantiate the custom array and use it just like a standard array:
 const myArray = new MyArray();
 myArray.push(4);
 console.log(myArray.get(0)); // Outputs: 4
+
+
+## Contact
+
+    For questions or to connect, you can reach out via:
+
+    LinkedIn: linkedin.com/in/saliheen-afridi-630672160
+    Email: saliheenafridi0@gmail.com
