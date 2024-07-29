@@ -13,10 +13,17 @@ class MyArray {
   get(index) {
     return this.data[index];
   }
+
+  pop() {
+    delete this.data[this.length - 1];
+    this.length--;
+  }
 }
 
 const myNewArray = new MyArray();
 myNewArray.push(20);
 myNewArray.push(30);
 myNewArray.push(40);
-console.log(myNewArray.get(10));
+console.log(myNewArray);
+myNewArray.pop();
+console.log(myNewArray);
