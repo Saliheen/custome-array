@@ -9,10 +9,14 @@ class MyArray {
     this.length++;
     return this.length;
   }
+
+  get(index) {
+    return this.data[index];
+  }
 }
 
 const myNewArray = new MyArray();
 myNewArray.push(20);
 myNewArray.push(30);
 myNewArray.push(40);
-console.log(myNewArray);
+console.log(myNewArray.get(10));
