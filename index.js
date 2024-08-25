@@ -27,14 +27,30 @@ class MyArray {
     this.length--;
     delete this.data[this.length];
   }
+
+  deleteByIndex(index) {
+    if (index > this.length - 1) {
+      throw new Error("Invalid index");
+    }
+
+    for (let i = index; i < this.length - 1; i++) {
+      this.data[i] = this.data[i + 1];
+    }
+    this.length--;
+    delete this.data[this.length - 1];
+  }
 }
 
 const myNewArray = new MyArray();
+myNewArray.push(10);
 myNewArray.push(20);
 myNewArray.push(30);
 myNewArray.push(40);
-console.log(myNewArray);
+myNewArray.push(50);
+myNewArray.push(60);
+console.log("----------------------------------");
+console.log(JSON.stringify(myNewArray, null, 3));
 
-myNewArray.shift();
-
-console.log(myNewArray);
+myNewArray.deleteByIndex(2);
+console.log("----------------------------------");
+console.log(JSON.stringify(myNewArray, null, 3));
