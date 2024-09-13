@@ -42,11 +42,7 @@ class MyArray {
 }
 
 const myNewArray = new MyArray();
-myNewArray.push(10);
-myNewArray.push(20);
-myNewArray.push(30);
-myNewArray.push(40);
-myNewArray.push(50);
+
 myNewArray.push(60);
 console.log("----------------------------------");
 console.log(JSON.stringify(myNewArray, null, 3));
