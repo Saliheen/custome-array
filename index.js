@@ -43,10 +43,10 @@ class MyArray {
 
 const myNewArray = new MyArray();
 
-myNewArray.push(60);
-console.log("----------------------------------");
-console.log(JSON.stringify(myNewArray, null, 3));
+// myNewArray.push(60);
+// console.log("----------------------------------");
+// console.log(JSON.stringify(myNewArray, null, 3));
 
-myNewArray.deleteByIndex(2);
-console.log("----------------------------------");
-console.log(JSON.stringify(myNewArray, null, 3));
+// myNewArray.deleteByIndex(2);
+// console.log("----------------------------------");
+// console.log(JSON.stringify(myNewArray, null, 3));
